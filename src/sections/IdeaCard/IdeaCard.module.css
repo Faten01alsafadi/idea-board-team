@@ -1,4 +1,83 @@
-/* CSS Module for IdeaCard */
 .container {
-    /* Add your styles here */
+  background: #0b0b0b;
+  border-radius: 14px;
+  padding: 16px 18px;
+  width: 280px;
+  box-shadow: 0 0 0 1px #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  max-width: 180px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: lowercase;
+}
+
+.work {
+  background: #1e40af;
+  color: #93c5fd;
+}
+
+.learning {
+  background: #92400e;
+  color: #fcd34d;
+}
+
+.personal {
+  background: #065f46;
+  color: #6ee7b7;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.active {
+  background: #1e3a8a;
+  color: #93c5fd;
+}
+
+.completed {
+  background: #065f46;
+  color: #6ee7b7;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.check {
+  color: #22c55e;
+  cursor: pointer;
+}
+
+.delete {
+  color: #ef4444;
+  cursor: pointer;
 }
