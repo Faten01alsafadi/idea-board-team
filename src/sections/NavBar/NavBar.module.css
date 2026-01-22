@@ -1,4 +1,4 @@
-/* CSS Module for NavBar */
+/* CSS Module for NavBar
 body{ 
     background-color: black;
     margin: 0;
@@ -6,7 +6,7 @@ body{
 }
 .container {
     font-family: Arial, sans-serif;
-    /* Add your styles here */
+    
     display: flex; 
     justify-content:space-between;
  border-bottom:1px solid rgb(94, 94, 94) ;
@@ -42,4 +42,4 @@ padding-right: 5px;
     align-items: center;
     gap: 20px;
     list-style: none;
-}
+} */

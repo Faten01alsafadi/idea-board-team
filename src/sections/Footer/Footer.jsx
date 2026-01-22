@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { MdOutlineEmail } from "react-icons/md";
-import { FiGithub } from "react-icons/fi";
-import { CiTwitter } from "react-icons/ci";
+// import { MdOutlineEmail } from "react-icons/md";
+// import { FiGithub } from "react-icons/fi";
+// import { CiTwitter } from "react-icons/ci";
 export default function Footer() {
     return (
         <footer className={styles.footer}>
@@ -35,3 +35,7 @@ export default function Footer() {
         </footer>
     );
 }
+
+        
+    
+
