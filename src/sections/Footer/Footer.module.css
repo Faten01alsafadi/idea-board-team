@@ -1,4 +1,75 @@
 /* CSS Module for Footer */
-.container {
+/*  */
+
     /* Add your styles here */
+
+.container{
+      /* font-family: Arial, sans-serif;
+    margin-top: auto; */
+ display: flex;
+ justify-content: space-between;
+ color: white;  
+ margin-top:20px;
+ border-bottom:1px solid rgb(94, 94, 94) ;
+}
+.footer{
+    color:gray;
+text-align: center;
+
+}
+.logobar{
+width:250px;
+text-align: start;
+padding-left:40px ;
+p{
+    color: gray;
+}
+}
+ .logText{
+      
+    display: flex;
+    align-items: center;
+    font-size: 12px; 
+
+ } 
+
+
+.logo{
+    width: 40px;
+    padding: 0 5px;
+    align-items: center;
+    background:none;
+}
+.quickLinks{
+   
+  h2, ul{
+display: flex;
+flex-direction: column;
+align-items: start;
+padding-left:50px ;
+   }
+   ul{
+    color: gray;
+   }
+  
+}
+.contact{
+ margin-right: 30px;
+  h3, ul{
+
+
+padding-left:40px ;
+
+    }
+}
+.contact ul li{
+    color:white;
+    background-color: gray;
+     border-radius: 10px;
+    font-size:25px;
+    padding: 5px;
+    text-align: center;
+    width: 30px ;
+    height: 30px;
+  
 }

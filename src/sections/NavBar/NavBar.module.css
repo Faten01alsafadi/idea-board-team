@@ -1,4 +1,45 @@
 /* CSS Module for NavBar */
+body{ 
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
 .container {
+    font-family: Arial, sans-serif;
     /* Add your styles here */
+    display: flex; 
+    justify-content:space-between;
+ border-bottom:1px solid rgb(94, 94, 94) ;
+    padding: 0 10px;
+
+    color:white;
+    background-color: black;
+   
+}
+.logo{
+    width: 50px;
+    padding: 0 5px;
+    background:none;
+}
+.logobar{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    
+}
+ a{
+    margin: 5px;
+   text-decoration: none; 
+   color: white;
+   
+}
+ul{
+padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
 }
