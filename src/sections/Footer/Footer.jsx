@@ -31,7 +31,7 @@ export default function Footer() {
                     </ul>
                 </div>   
                 </div>
-                <p>@2026 IdeaBoard Buit with React+Vite</p>         
+                       
         </footer>
     );
 }
