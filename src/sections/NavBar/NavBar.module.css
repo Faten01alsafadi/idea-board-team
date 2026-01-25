@@ -1,10 +1,10 @@
-/* CSS Module for NavBar
-body{ 
+/* CSS Module for NavBar */
+/* body{ 
     background-color: black;
     margin: 0;
     padding: 0;
-}
-.container {
+} */
+/* .container {
     font-family: Arial, sans-serif;
     
     display: flex; 
@@ -43,3 +43,15 @@ padding-right: 5px;
     gap: 20px;
     list-style: none;
 } */
+.custom {
+  background-color: #080908;
+}
+.help :global(.nav-link) {
+  color: white;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+}
+.help :global(.nav-link:hover) {
+  color: rgb(217, 217, 217);
+}

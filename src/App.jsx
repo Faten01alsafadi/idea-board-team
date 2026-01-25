@@ -1,7 +1,8 @@
+import IdeaGallery from "./sections/IdeaGallery/IdeaGallery"
 
 
 import NavBar from "./sections/NavBar/NavBar";
-// import Footer from "./sections/Footer/Footer";
+import Footer from "./sections/Footer/Footer";
 
 
 
@@ -16,7 +17,7 @@ function App() {
     
         
 <NavBar/>
-{/* <Footer/> */}
+<Footer/>
     </>
   )
 }
