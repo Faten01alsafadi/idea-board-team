@@ -1,4 +1,4 @@
-import IdeaGallery from "./sections/IdeaGallery/IdeaGallery"
+
 
 
 import NavBar from "./sections/NavBar/NavBar";
@@ -14,10 +14,12 @@ function App() {
 
   return (
     <>
+
     
         
 <NavBar/>
 <Footer/>
+
     </>
   )
 }
