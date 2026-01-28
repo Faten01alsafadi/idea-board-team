@@ -1,0 +1,18 @@
+.card{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(140deg, #080908 45%,#9810fa  );
+}
+.email{
+    
+    background-color:#3e4044;
+    border:none;
+    height:45px;
+    font-size:20px;
+   
+}
+
