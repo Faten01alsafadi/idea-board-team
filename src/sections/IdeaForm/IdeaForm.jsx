@@ -16,7 +16,7 @@ export default function IdeaForm() {
                   <select >
                     <option> General</option>
                   </select>
-           
+           <button className={styles.actionBtn}>Add idea</button>
                 </form>
             </div>
         </div>
