@@ -1,4 +1,41 @@
-/* CSS Module for FilterBar */
-.container {
-    /* Add your styles here */
+.filterContainer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+  padding-bottom: 5px;
+}
+
+.filterBtn {
+  background-color: #1a1a1a; 
+  color: #a0a0a0; 
+  border: 1px solid #2a2a2a;
+  padding: 10px 28px;
+  border-radius: 12px; 
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+}
+
+
+.filterBtn:hover {
+  background-color: #252525;
+  color: #fff;
+  border-color: #444;
+  transform: translateY(-2px); 
+}
+
+
+.active {
+  background: linear-gradient(135deg, #7c1fd1, #6d28d9) !important; 
+  color: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(124, 31, 209, 0.3); 
+  font-weight: 600;
+}
+
+
+.filterBtn:active {
+  transform: scale(0.95);
 }
