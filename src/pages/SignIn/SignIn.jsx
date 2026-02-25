@@ -1,14 +1,24 @@
+// import React from 'react'
+import React, { useState } from "react";
+
+import { Link } from "react-router";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import styles from "./Login.module.css";
-import React, { useState } from "react";
+import styles from "./SignIn.module.css";
 import { FiGithub } from "react-icons/fi";
 import { FaGoogle } from "react-icons/fa6";
-// import { useNavigate } from 'react-router-dom';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+function SignIn() {
+  //   return (
+  //     <div>
+  //     <Link to= "/landing">
+  //      <button>signin</button>
+  //       </Link>
 
-function Login() {
-  //   const navigate = useNavigate();
+  //     </div>
+  //   )
+  // }
+
+  // export default SignIn
   const purpleColor = "#9810fa";
   const blackColor = "#3e4044";
   return (
@@ -24,42 +34,49 @@ function Login() {
             padding: "20px",
           }}
         >
-          <Form>
-            <div className="d-flex mb-3">
-              <button
-                className="flex-fill btn"
-                style={{
-                  backgroundColor: purpleColor,
-                  color: "white",
-                  borderRadius: "0.375rem 0 0 0.375rem",
-                  border: "none",
-                  boxShadow: "0  0 15px #9810fa",
-                }}
-              >
-                Login
-              </button>
-
-              <button
-                className="flex-fill btn"
-                style={{
-                  backgroundColor: blackColor,
-                  color: "white",
-                  borderRadius: "0 0.375rem 0.375rem 0",
-                  border: "none",
-                }}
-                onClick={() => navigate("/SignUp")}
-              >
-                Sign Up
-              </button>
-              
+          <div style={{ backgroundColor: "#3e4044", borderRadius: "10px" }}>
+            <div className=" mb-4 px-1   ">
+              <Link to="/signin">
+                <button
+                  className="flex-fill btn"
+                  style={{
+                    backgroundColor: purpleColor,
+                    color: "white",
+                    borderRadius: "10px",
+                    border: "none",
+                    boxShadow: "0  0 15px #9810fa",
+                    width: "50%",
+                  }}
+                >
+                  Login
+                </button>
+              </Link>
+              <Link to="/">
+                <button
+                  className="flex-fill btn "
+                  style={{
+                    backgroundColor: blackColor,
+                    color: "white",
+                    borderRadius: "10px",
+                    border: "none",
+                    width: "49%",
+                    height: "45px",
+                  }}
+                  // onClick={() => navigate("/SignUp")}
+                >
+                  Sign Up
+                </button>
+              </Link>
             </div>
-
+          </div>
+          <Form >
             <Form.Group className="mb-3 ">
               <Form.Label className="text-white  ">Email address</Form.Label>
               <Form.Control
                 className={styles.emailLogin}
                 type="email"
                 placeholder="you@example.com"
+                id="email"
               />
             </Form.Group>
 
@@ -69,6 +86,7 @@ function Login() {
                 className={styles.emailLogin}
                 type="password"
                 placeholder="........"
+                id="password"
               />
             </Form.Group>
 
@@ -100,7 +118,7 @@ function Login() {
                 boxShadow: "0  0 15px #9810fa",
               }}
             >
-              Login
+              Sign In
             </Button>
           </Form>
 
@@ -142,4 +160,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignIn;

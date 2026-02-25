@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": "8c3a",
+      "name": "luna",
+      "email": "luna@gmail.com",
+      "password": "777777777"
+    },
+    {
+      "id": "4288",
+      "name": "faten99",
+      "email": "faten@gmail.com",
+      "password": "999999999333"
+    }
+  ],
+  "ideas": []
+}

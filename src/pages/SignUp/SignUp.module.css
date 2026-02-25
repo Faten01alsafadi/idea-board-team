@@ -1,18 +1,24 @@
-.card{
+.cardsignup{
     
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    background: linear-gradient(140deg, #080908 45%,#9810fa  );
+ background: #080908 ; 
+  
 }
-.email{
-    
+.emailSignup{
+
     background-color:#3e4044;
     border:none;
-    height:45px;
+    height:55px;
     font-size:20px;
    
 }
+.emailSignup:focus{
+  border:2px solid #9810fa;
+    outline: none;
+    box-shadow: 0 0 5px #9810fa;
 
+}
