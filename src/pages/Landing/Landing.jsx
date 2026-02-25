@@ -8,8 +8,8 @@ function Landing() {
     // App
     // بالترتيب الصحيح
     <div>
-      {/* <SignIn/>
-      <SignUp/> */}
+       <SignIn/>
+       <SignUp/>
         {/* مثال */}
       {/* <Nav/> */}
       {/* <Hero/> */}
