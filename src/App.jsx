@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp from "./pages/SignUp/SignUp"
 import SignIn from "./pages/SignIn/SignIn";
 
@@ -6,18 +6,16 @@ import Landing from "./pages/Landing/Landing"
 
 
 
-import NavBar from "./sections/NavBar/NavBar";
-import Footer from "./sections/Footer/Footer";
+
 
 
 
 
 
 function App() {
-
-
   return (
     <>
+  <IdeaForm/>
    <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignUp />} />
@@ -29,5 +27,5 @@ function App() {
     </>
   )
 }
+export default App;
 
-export default App

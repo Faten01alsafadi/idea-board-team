@@ -2,6 +2,7 @@ import React from 'react'
 import SignIn from '../SignIn/SignIn'
 import SignUp from '../SignUp/SignUp'
 import NavBar from '../../sections/NavBar/NavBar'
+import Hero from '../../sections/Component/Hero/Hero'
 
 function Landing() {
   return (
@@ -10,6 +11,7 @@ function Landing() {
     // بالترتيب الصحيح
     <div>
       <NavBar/>
+      <Hero/>
        {/* <SignIn/>
        <SignUp/> */}
         {/* مثال */}

@@ -1,0 +1,32 @@
+
+.hero-custom {
+background-size: cover;
+background-position: center;
+background-color: black;
+min-height: 100vh;
+max-width: 100%;;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: relative;
+}
+.hero-bg-overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+background: linear-gradient(to bottom,rgba(0,0,0,0.6) 70%, rgba(0,0,0,1)100%);
+    z-index: 1;
+}
+
+.content-wrapper {
+    z-index: 2 !important;
+    position: relative;
+  max-width: 900px;
+}
+
+
+.text-purple{
+    color: white!important;} 

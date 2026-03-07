@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "users": [
     {
       "id": "8c3a",
@@ -14,4 +15,27 @@
     }
   ],
   "ideas": []
+=======
+  "users": [],
+  "ideas": [
+    {
+      "id": "6698",
+      "title": "stgkkgfgh",
+      "type": "General",
+      "status": "active"
+    },
+    {
+      "id": "a356",
+      "title": "sffhh",
+      "type": "General",
+      "status": "active"
+    },
+    {
+      "id": "d759",
+      "title": "atheer",
+      "type": "Work",
+      "status": "active"
+    }
+  ]
+>>>>>>> origin/final
 }
