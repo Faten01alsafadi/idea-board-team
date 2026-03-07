@@ -15,7 +15,7 @@ import Landing from "./pages/Landing/Landing"
 function App() {
   return (
     <>
-  <IdeaForm/>
+
    <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignUp />} />

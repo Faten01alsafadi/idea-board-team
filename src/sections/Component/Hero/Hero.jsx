@@ -1,6 +1,6 @@
 import React from "react";
 import './Hero.css';
- const Hero= ({subtitle, title, highlight, description, backgroundImage }) =>{
+ function Hero ({subtitle, title, highlight, description, backgroundImage }) {
     return(
         <section className= "hero-custom  d-flex text-center text-white   " style={{backgroundImage: `url(${backgroundImage})`}}>
             <div className="hero-bg-overlay"></div>
