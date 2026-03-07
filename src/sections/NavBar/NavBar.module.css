@@ -1,4 +1,57 @@
 /* CSS Module for NavBar */
-.container {
-    /* Add your styles here */
+/* body{ 
+    background-color: black;
+    margin: 0;
+    padding: 0;
+} */
+/* .container {
+    font-family: Arial, sans-serif;
+    
+    display: flex; 
+    justify-content:space-between;
+ border-bottom:1px solid rgb(94, 94, 94) ;
+    padding: 0 10px;
+
+    color:white;
+    background-color: black;
+   
+}
+.logo{
+    width: 50px;
+    padding: 0 5px;
+    background:none;
+}
+.logobar{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    
+}
+ a{
+    margin: 5px;
+   text-decoration: none; 
+   color: white;
+   
+}
+ul{
+padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+} */
+.custom {
+  background-color: #080908;
+}
+.help :global(.nav-link) {
+  color: white;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+}
+.help :global(.nav-link:hover) {
+  color: rgb(217, 217, 217);
 }
