@@ -1,5 +1,7 @@
 import React from 'react'
-
+import SignIn from '../SignIn/SignIn'
+import SignUp from '../SignUp/SignUp'
+import NavBar from '../../sections/NavBar/NavBar'
 
 function Landing() {
   return (
@@ -7,9 +9,13 @@ function Landing() {
     // App
     // بالترتيب الصحيح
     <div>
+      <NavBar/>
+       {/* <SignIn/>
+       <SignUp/> */}
         {/* مثال */}
       {/* <Nav/> */}
       {/* <Hero/> */}
+      
     </div>
   )
 }
