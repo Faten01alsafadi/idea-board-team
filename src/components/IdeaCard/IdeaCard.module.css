@@ -1,0 +1,89 @@
+.card {
+  background-color: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.completedTitle {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.work {
+  background-color: #1e40af;
+}
+
+.learning {
+  background-color: #a16207;
+}
+
+.personal {
+  background-color: #15803d;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.active {
+  background-color: #1e3a8a;
+}
+
+.completed {
+  background-color: #166534;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.check {
+  color: #22c55e;
+  cursor: pointer;
+}
+
+.delete {
+  color: #ef4444;
+  cursor: pointer;
+}

@@ -4,6 +4,7 @@ import SignUp from '../SignUp/SignUp'
 import NavBar from '../../sections/NavBar/NavBar'
 import Hero from '../../sections/Component/Hero/Hero'
 import IdeaForm  from '../../sections/IdeaForm/IdeaForm'
+import CardContainer from '../../sections/CardContainer/CardContainer'
 function Landing() {
   return (
     // استدعو اقسامكن هون بدل بال
@@ -18,6 +19,7 @@ function Landing() {
     backgroundImage="/assets/images/photo_٢٠٢٦-٠١-٢٩_١٤-١٩-٤٦.jpg"
 />
 <IdeaForm/>
+<CardContainer/>
        {/* <SignIn/>
        <SignUp/> */}
         {/* مثال */}

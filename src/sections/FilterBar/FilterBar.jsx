@@ -1,10 +1,21 @@
-import React from 'react';
-import styles from './FilterBar.module.css';
+import styles from "./FilterBar.module.css";
 
-export default function FilterBar() {
-    return (
-        <div className={styles.container}>
-            <p>Placeholder for FilterBar Component</p>
-        </div>
-    );
+export default function FilterBar({ activeFilter, setActiveFilter }) {
+  const filters = ["All", "Active", "Completed"];
+
+  return (
+    <div className={styles.filterContainer}>
+      {filters.map((filter) => (
+        <button
+          key={filter}
+          className={`${styles.filterBtn} ${
+            activeFilter === filter ? styles.active : ""
+          }`}
+          onClick={() => setActiveFilter(filter)}
+        >
+          {filter}
+        </button>
+      ))}
+    </div>
+  );
 }
