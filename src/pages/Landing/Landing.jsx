@@ -5,6 +5,7 @@ import NavBar from '../../sections/NavBar/NavBar'
 import Hero from '../../sections/Component/Hero/Hero'
 import IdeaForm  from '../../sections/IdeaForm/IdeaForm'
 import CardContainer from '../../sections/CardContainer/CardContainer'
+import Footer from '../../sections/Footer/Footer'
 function Landing() {
   return (
     // استدعو اقسامكن هون بدل بال
@@ -20,6 +21,7 @@ function Landing() {
 />
 <IdeaForm/>
 <CardContainer/>
+<Footer/>
        {/* <SignIn/>
        <SignUp/> */}
         {/* مثال */}
