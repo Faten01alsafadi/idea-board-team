@@ -18,6 +18,7 @@ useEffect(() => {
       .then(data => setIdeas(data));
   };
 
+
   window.addEventListener("ideaAdded", refreshIdeas);
 
   return () => {
