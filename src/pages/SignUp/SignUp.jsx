@@ -133,7 +133,7 @@ function SignUp() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
-      
+             <Link to="/signin">
             <Button
               type="submit"
               disabled={loading}
@@ -150,6 +150,7 @@ function SignUp() {
             >
               {loading ? "Creating Account..." : "Create Account"}
             </Button>
+            </Link>
       
           </Form>
 

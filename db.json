@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "users": [
     {
       "id": "8c3a",
@@ -12,30 +11,16 @@
       "name": "faten99",
       "email": "faten@gmail.com",
       "password": "999999999333"
+    },
+    {
+      "id": "6a52",
+      "name": "sdf",
+      "email": "dsf@sdfdfg.com",
+      "password": "sdf"
     }
   ],
-  "ideas": []
-=======
-  "users": [],
   "ideas": [
-    {
-      "id": "6698",
-      "title": "stgkkgfgh",
-      "type": "General",
-      "status": "active"
-    },
-    {
-      "id": "a356",
-      "title": "sffhh",
-      "type": "General",
-      "status": "active"
-    },
-    {
-      "id": "d759",
-      "title": "atheer",
-      "type": "Work",
-      "status": "active"
-    }
-  ]
->>>>>>> origin/final
+   
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

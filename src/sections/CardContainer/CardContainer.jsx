@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./CardContainer.module.css";
 import IdeaCard from "../../components/IdeaCard/IdeaCard";
 import FilterBar from "../FilterBar/FilterBar"; 
@@ -7,33 +7,73 @@ export default function CardContainer() {
   const [showMore, setShowMore] = useState(false);
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const ideas = [
-    { title: "Build a personal portfolio website", category: "work", status: "Active" },
-    { title: "Learn TypeScript fundamentals", category: "learning", status: "Completed", completed: true },
-    { title: "Create a morning routine tracker", category: "personal", status: "Active" },
-    { title: "Start a side project in React", category: "work", status: "Active" },
-    { title: "Read 'Clean Code' by Robert Martin", category: "learning", status: "Active" },
-    { title: "Build a habit tracking app", category: "personal", status: "Active" },
-    { title: "Contribute to open source projects", category: "work", status: "Active" },
-    { title: "Master CSS Grid and Flexbox", category: "learning", status: "Completed", completed: true },
-  ];
+  const [ideas, setIdeas] = useState
+  ([]);
 
+useEffect(() => {
+
+  const refreshIdeas = () => {
+    fetch("http://localhost:3000/ideas")
+      .then(res => res.json())
+      .then(data => setIdeas(data));
+  };
+
+  window.addEventListener("ideaAdded", refreshIdeas);
+
+  return () => {
+    window.removeEventListener("ideaAdded", refreshIdeas);
+  };
+
+}, []);
 
   const filteredIdeas = ideas.filter((idea) => {
     if (activeFilter === "All") return true;
-    return idea.status === activeFilter;
+  
+return idea.status.toLowerCase() === activeFilter.toLowerCase();
   });
 
 
   const visibleIdeas = showMore ? filteredIdeas : filteredIdeas.slice(0, 6);
+const toggleComplete = (id, currentStatus) => {
 
+  const newStatus =
+    currentStatus.toLowerCase() === "active"
+      ? "completed"
+      : "active";
+
+  fetch(`http://localhost:3000/ideas/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      status: newStatus
+    })
+  })
+    .then(() => {
+      setIdeas(prev =>
+        prev.map(idea =>
+          idea.id === id
+            ? { ...idea, status: newStatus }
+            : idea
+        )
+      );
+    });
+};
   return (
     <section className={styles.container}>
       <FilterBar activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
 
       <div className={styles.grid}>
         {visibleIdeas.map((idea, index) => (
-          <IdeaCard key={index} {...idea} />
+            <IdeaCard
+    key={idea.id}
+   id={idea.id}  
+  title={idea.title}
+  category={idea.type.toLowerCase()}
+  status={idea.status}
+  onToggleComplete={toggleComplete}
+  />
         ))}
       </div>
 

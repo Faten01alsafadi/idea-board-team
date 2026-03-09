@@ -3,14 +3,17 @@ import { BsCheckLg, BsTrash } from "react-icons/bs";
 
 export default function IdeaCard({
   title,
+    id,     
   category,
   status,
-  completed,
+    onToggleComplete
 }) {
   return (
-    <div className={styles.card}>
+    <div className={` ${styles.card}   ${
+            status.toLowerCase() === "completed" ? styles.completedCard :''
+          }`}>
       <div className={styles.header}>
-        <h3 className={completed ? styles.completedTitle : ""}>
+        <h3 className={status.toLowerCase() === "completed" ? styles.completedTitle : ""}>
           {title}
         </h3>
 
@@ -22,14 +25,15 @@ export default function IdeaCard({
       <div className={styles.footer}>
         <span
           className={`${styles.status} ${
-            completed ? styles.completed : styles.active
+            status.toLowerCase() === "completed" ? styles.completed : styles.active
           }`}
         >
           {status}
         </span>
 
         <div className={styles.actions}>
-          <BsCheckLg className={styles.check} />
+          <BsCheckLg       onClick={() => onToggleComplete(id, status)}
+          style={{ cursor: "pointer" }} className={styles.check} />
           <BsTrash className={styles.delete} />
         </div>
       </div>

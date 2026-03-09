@@ -8,6 +8,8 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 180px;
+   transition:box-shadow , transform 0.5s;
+   cursor: pointer;
 }
 
 .header {
@@ -46,6 +48,12 @@
 
 .personal {
   background-color: #15803d;
+}
+.general{
+  background-color: #6b7280;
+}
+.creative{
+  background-color: #9333ea;
 }
 
 .footer {
@@ -86,4 +94,28 @@
 .delete {
   color: #ef4444;
   cursor: pointer;
+}
+.delete:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 0px 14px 5px rgba(209, 31, 31, 0.55);
+}
+.check:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 0px 14px 5px rgba(58, 209, 31, 0.55);
+}
+.card:hover{
+    transform: translateY(-3px);
+  box-shadow: 0 0px 15px 3px rgba(124, 31, 209, 0.55);
+  transition: 0.5s;
+}
+.completedCard{
+  /* background:linear-gradient(135deg, rgba(124, 31, 209, 0.55), rgba(169, 119, 215, 0.55)); */
+   box-shadow: 0 0px 15px 3px rgba(31, 209, 64, 0.55);
+   transform: scale(1.02);
+   transform: translateY(-10px);
+}
+.completedCard:hover{
+     box-shadow: 0 0px 15px 3px rgba(31, 209, 64, 0.55);
+   transform: scale(1.02);
+   transform: translateY(-10px);
 }

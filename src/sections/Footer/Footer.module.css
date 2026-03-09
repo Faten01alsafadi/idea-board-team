@@ -75,7 +75,12 @@ padding-left:40px ;
 } */
 
 .footer {
-  background-color: #080908;
+  background-color: #0a0a0a;
   margin-top: 3px;
   padding-top: 20px;
 }
+.icons a:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 0px 14px 5px rgba(124, 31, 209, 0.55);
+}
+

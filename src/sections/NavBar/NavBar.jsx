@@ -7,6 +7,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router";
+import { Button } from "bootstrap/dist/js/bootstrap.bundle.min";
 
 // import"./NavBar.module.css";
 export default function NavBar() {
@@ -24,18 +26,34 @@ export default function NavBar() {
           ideaBoard
         </Navbar.Brand>
         <Nav className={styles.help}>
-          <Nav.Link href="#home">
+          <Nav.Link className={styles.link} href="#home">
             <FiHome />
             Home
           </Nav.Link>
-          <Nav.Link href="#features">
+          <Nav.Link className={styles.link} href="#features">
             <IoIosInformationCircleOutline />
             About
           </Nav.Link>
-          <Nav.Link href="#pricing">
+          <Nav.Link className={styles.link} href="#pricing">
             <MdOutlineEmail />
             Contact
           </Nav.Link>
+
+            <Link  to="/signin">
+                          <button
+                            className={`flex-fill btn ${styles.loginBtn}`}
+                            style={{
+                              backgroundColor:"#9810fa",
+                              color: "white",
+                              borderRadius: "10px",
+                              border: "none",
+                              boxShadow: "0  0 15px #9810fa",
+                              width: "100%",
+                            }}
+                          >
+                            Login
+                          </button>
+                        </Link>
         </Nav>
       </Container>
     </Navbar>

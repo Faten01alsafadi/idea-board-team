@@ -45,9 +45,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 mb-4 ">
             <h5 className="text-white">Connect</h5>
-            <div className="d-flex gap-3 fs-5 ">
+            <div className={`d-flex gap-3 fs-5  ${styles.icons}`}>
               <a
                 href="#"
                 className="text-white p-2 rounded bg-secondary d-flex gap-3  align-items-center justify-content-center "
