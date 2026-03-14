@@ -20,7 +20,18 @@
     }
   ],
   "ideas": [
-   
+    {
+      "id": "27c6",
+      "title": "i'm a front end developer",
+      "type": "General",
+      "status": "active"
+    },
+    {
+      "id": "c05d",
+      "title": "finish the project",
+      "type": "General",
+      "status": "active"
+    }
   ],
- "$schema": "./node_modules/json-server/schema.json"
+  "$schema": "./node_modules/json-server/schema.json"
 }

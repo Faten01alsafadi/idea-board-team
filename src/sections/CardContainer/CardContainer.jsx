@@ -13,7 +13,7 @@ export default function CardContainer() {
 useEffect(() => {
 
   const refreshIdeas = () => {
-    fetch("http://localhost:3000/ideas")
+    fetch("http://localhost:3001/ideas")
       .then(res => res.json())
       .then(data => setIdeas(data));
   };
@@ -42,7 +42,7 @@ const toggleComplete = (id, currentStatus) => {
       ? "completed"
       : "active";
 
-  fetch(`http://localhost:3000/ideas/${id}`, {
+  fetch(`http://localhost:3001/ideas/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json"
